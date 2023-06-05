@@ -17,6 +17,10 @@ export class ProductService {
     return this.httpClient.get<Product[]>("http://localhost:8080/getAllProducts");
   }
 
+  public getProductDetailsById(productId) {
+    return this.httpClient.get<Product>("http://localhost:8080/getProductDetailsById/" + productId);
+  }
+
   public deleteProduct(productId: number) {
     return this.httpClient.delete("http://localhost:8080/deleteProductDetails/" + productId);
   }

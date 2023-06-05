@@ -39,8 +39,15 @@
                     </mat-form-field>
 
                     <div align="end">
-                        <button mat-stroked-button color="primary" style="margin-right: 10px;">Limpar</button>
-                        <button type="submit" mat-stroked-button color="primary">Adicionar produto</button>
+                        <button mat-stroked-button 
+                                color="primary" 
+                                style="margin-right: 10px;">Limpar</button>
+                        <button type="submit" *ngIf="isNewProduct"
+                                mat-stroked-button 
+                                color="primary">Adicionar produto</button>
+                        <button type="submit" *ngIf="!isNewProduct"
+                                mat-stroked-button 
+                                color="primary">Atualizar produto</button>
                     </div>
 
                 </form>

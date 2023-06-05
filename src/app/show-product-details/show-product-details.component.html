@@ -42,7 +42,7 @@
         <ng-container matColumnDef="Editar">
             <th mat-header-cell *matHeaderCellDef>Editar</th>
             <td mat-cell *matCellDef="let element">
-                <button mat-icon-button color="primary">
+                <button mat-icon-button color="primary" (click)="editProductDetails(element.productId)">
                     <mat-icon>edit</mat-icon>
                 </button>
             </td>
