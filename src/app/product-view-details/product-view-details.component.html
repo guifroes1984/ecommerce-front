@@ -29,7 +29,7 @@
                     <b style="text-decoration: line-through;">R$. {{product.productActualPrice}}</b> &nbsp;por <b>R$. {{product.productDiscountedPrice}}</b>
                 </div>
                 <div class="mt-5 text-center">
-                    <button mat-raised-button color="warn" style="width: 200px;">Comprar agora</button>
+                    <button mat-raised-button color="warn" style="width: 200px;" (click)="buyProduct(product.productId)">Comprar agora</button>
                 </div>
             </div>
         </div>
