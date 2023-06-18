@@ -1,7 +1,8 @@
-<div class="container mt-5">
-    <div class="card" style="padding: 20px;">
-        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
-
+<div class="container d-flex mt-5">
+    <div class="login-card">
+      <h2 class="card-title text-center">Faça o login</h2>
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+        <div class="form-group">
             <mat-form-field appearance="outline" class="w-100">
                 <mat-label>Usuário</mat-label>
                 <input matInput 
@@ -11,7 +12,9 @@
                        placeholder="Ex: Joao@123">
                 <mat-hint>Usuário</mat-hint>
             </mat-form-field>
-
+        </div>
+  
+        <div class="form-group">
             <mat-form-field appearance="outline" class="w-100">
                 <mat-label>Senha</mat-label>
                 <input  type="password"
@@ -22,13 +25,14 @@
                         placeholder="Ex: 123...">
                 <mat-hint>Senha</mat-hint>
             </mat-form-field>
-
-            <button class="w-100" type="submit" mat-raised-button color="primary">Login</button>    
-        </form>
+        </div>
+  
+        <button class="btn btn-primary btn-lg btn-block mt-3" type="submit">Login</button>
+      </form>
+  
+      <div class="text-center mt-3">
+        <p>Não tem uma conta? <button class="btn btn-link" type="button" (click)="registerUser()">Crie a sua aqui</button></p>
+      </div>
     </div>
-
-    <div class="text-center">
-        <br>
-        <button class="w-20" mat-raised-button type="button" (click)="registerUser()">Crie a sua conta aqui</button>
-    </div>
-</div>
+  </div>
+  
