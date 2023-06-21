@@ -9,3 +9,10 @@ table td {
 .mat-column-descricao {
     width: 35% !important;
 }
+
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }

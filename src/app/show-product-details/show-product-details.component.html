@@ -33,15 +33,15 @@
         </ng-container>
 
         <ng-container matColumnDef="Ações">
-            <th mat-header-cell *matHeaderCellDef>Ações</th>
-            <td mat-cell *matCellDef="let element">
-                <button mat-icon-button color="primary" (click)="showImages(element)">
+            <th mat-header-cell *matHeaderCellDef class="text-center">Ações</th>
+            <td mat-cell *matCellDef="let element" class="align-center">
+                <button mat-icon-button color="primary" (click)="showImages(element)" matTooltip="Mostrar Imagens">
                     <mat-icon>images</mat-icon>
                 </button>
-                <button mat-icon-button color="primary" (click)="editProductDetails(element.productId)">
+                <button mat-icon-button color="primary" (click)="editProductDetails(element.productId)" matTooltip="Editar Detalhes do Produto">
                     <mat-icon>edit</mat-icon>
                 </button>
-                <button mat-icon-button color="warn" (click)="deleteProduct(element.productId)">
+                <button mat-icon-button color="warn" (click)="deleteProduct(element.productId)" matTooltip="Excluir Produto">
                     <mat-icon>delete</mat-icon>
                 </button>
             </td>

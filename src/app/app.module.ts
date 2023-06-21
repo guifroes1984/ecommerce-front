@@ -32,6 +32,7 @@ import { ProductViewDetailsComponent } from './product-view-details/product-view
 import { BuyProductComponent } from './buy-product/buy-product.component';
 import { OrderConfirmationComponent } from './order-confirmation/order-confirmation.component';
 import { ResgisterComponent } from './resgister/resgister.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { ResgisterComponent } from './resgister/resgister.component';
     MatGridListModule,
     MatTableModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTooltipModule
   ],
   providers: [
     AuthGuard,
