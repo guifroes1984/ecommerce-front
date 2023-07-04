@@ -3,13 +3,13 @@
   <mat-form-field appearance="outline" class="w-100">
     <mat-label>Pesquise qualquer produto</mat-label>
     <input matInput 
-           #searchkeyword 
-           (keyup)="searchByKeyword(searchkeyword.value)"
-           name="searchKey" 
-           id="searchKey" 
-           placeholder="Pesquise qualquer produto">
+            #searchkeyword 
+            (keyup)="searchByKeyword(searchkeyword.value)"
+            name="searchKey" 
+            id="searchKey" 
+            placeholder="Pesquise qualquer produto">
     <mat-hint>Pesquise qualquer produto</mat-hint>
-</mat-form-field>
+  </mat-form-field>
 
     <mat-grid-list cols="4" rowHeight="3:5" gutterSize="10">
         <mat-grid-tile *ngFor="let p of productDetails">
