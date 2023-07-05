@@ -1,48 +1,58 @@
 <div class="container mt-5">
-    <div class="card" style="padding: 20px;">
+    <div class="login-card">
+        <h2 class="card-title text-center">Registro</h2>
         <form #registerForm="ngForm" (ngSubmit)="register(registerForm)">
-            <mat-form-field appearance="outline" class="w-100">
-                <mat-label>Usuário</mat-label>
-                <input matInput 
-                       ngModel 
-                       name="userName" 
-                       id="userName" 
-                       placeholder="Ex: Joao123">
-                <mat-hint>Usuário</mat-hint>
-            </mat-form-field>
+            <div class="form-field">
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Usuário</mat-label>
+                    <input matInput 
+                           ngModel 
+                           name="userName" 
+                           id="userName" 
+                           placeholder="Ex: Joao123">
+                    <mat-hint>Insira seu nome de usuário</mat-hint>
+                </mat-form-field>
+            </div>
 
-            <mat-form-field appearance="outline" class="w-100">
-                <mat-label>Primeiro nome</mat-label>
-                <input matInput 
-                       ngModel 
-                       name="userFirstName" 
-                       id="userFirstName" 
-                       placeholder="Ex: João">
-                <mat-hint>Primeiro nome</mat-hint>
-            </mat-form-field>
+            <div class="form-field">
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Primeiro nome</mat-label>
+                    <input matInput 
+                           ngModel 
+                           name="userFirstName" 
+                           id="userFirstName" 
+                           placeholder="Ex: João">
+                    <mat-hint>Insira seu primeiro nome</mat-hint>
+                </mat-form-field>
+            </div>
 
-            <mat-form-field appearance="outline" class="w-100">
-                <mat-label>Sobrenome</mat-label>
-                <input matInput 
-                       ngModel 
-                       name="userLastName" 
-                       id="userLastName" 
-                       placeholder="Ex: Silva">
-                <mat-hint>Sobrenome</mat-hint>
-            </mat-form-field>
+            <div class="form-field">
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Sobrenome</mat-label>
+                    <input matInput 
+                           ngModel 
+                           name="userLastName" 
+                           id="userLastName" 
+                           placeholder="Ex: Silva">
+                    <mat-hint>Insira seu sobrenome</mat-hint>
+                </mat-form-field>
+            </div>
 
-            <mat-form-field appearance="outline" class="w-100">
-                <mat-label>Senha</mat-label>
-                <input matInput 
-                       ngModel 
-                       name="userPassword" 
-                       id="userPassword" 
-                       placeholder="Ex: 123...">
-                <mat-hint>Senha</mat-hint>
-            </mat-form-field>
+            <div class="form-field">
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Senha</mat-label>
+                    <input type="password"
+                           matInput 
+                           ngModel 
+                           name="userPassword" 
+                           id="userPassword" 
+                           placeholder="Ex: 123...">
+                    <mat-hint>Insira uma senha</mat-hint>
+                </mat-form-field>
+            </div>
 
             <div class="text-center">
-                <button type="submit" mat-raised-button color="primary">Registro</button>
+                <button type="submit" mat-raised-button class="btn-primary">Registrar</button>
             </div>
         </form>
     </div>
