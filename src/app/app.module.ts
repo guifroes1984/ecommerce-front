@@ -33,6 +33,7 @@ import { BuyProductComponent } from './buy-product/buy-product.component';
 import { OrderConfirmationComponent } from './order-confirmation/order-confirmation.component';
 import { ResgisterComponent } from './resgister/resgister.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     ProductViewDetailsComponent,
     BuyProductComponent,
     OrderConfirmationComponent,
-    ResgisterComponent
+    ResgisterComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
